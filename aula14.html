@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap</title>
+        <!-- Define a viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- adicionar CSS Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado-->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h1 class="visible-print-block">Exibir Somente na Impressão da página</h1>
+                    <h1 class="hidden-print">Exibir Somente na página</h1>
+                    <a href="#" class="btn btn-danger hidden-print">Imprimir Pagina</a>
+                </div>
+
+                <div class="col-xs-12 bg-color-padding">
+                    <p class="bg-primary visible-xs-block">Voce esta na resolução XS</p>
+                    <p class="bg-success visible-sm-block">Voce esta na resolução SM</p>
+                    <p class="bg-danger visible-md-block">Voce esta na resolução MD</p> 
+                    <p class="bg-warning visible-lg-block">Voce esta na resolução LG</p>
+                    
+                    <a href="#" class="btn btn-default visible-sm-block visible-md-block visible-lg-block">Acesse nossa versão mobile</a>
+                    <a href="#" class="btn btn-default hidden-xs hidden-sm">Mesmo de cima com hidden para xs e sm</a>
+
+                </div> 
+                
+                <div class="col-xs-12 bg-color-padding">
+
+                    <h1>Tipos</h1>
+
+                    <a href="#" class="visible-sm-block visible-md-block visible-lg-block btn btn-primary">Block</a>
+                    <a href="#" class="visible-sm-inline visible-md-inline visible-lg-inline btn btn-success">Inline</a>
+                    <a href="#" class="visible-sm-inline-block visible-md-inline-block visible-lg-inline-block btn btn-danger">Inline-block</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

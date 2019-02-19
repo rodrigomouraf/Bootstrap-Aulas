@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap</title>
+        <!-- Define a viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- adicionar CSS Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado-->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+
+                    <div id="carousel01" class="carousel slide" data-ride="carousel" data-interval="5000">                        
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel01" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel01" data-slide-to="1"></li>
+                            <li data-target="#carousel01" data-slide-to="2"></li>
+                            <li data-target="#carousel01" data-slide-to="3"></li>
+                            <li data-target="#carousel01" data-slide-to="4"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <img src="imgs/imagem1.jfif" alt="alguma coisa">
+
+                                <div class="carousel-caption">
+                                    <h3>Titulo da imagem</h3>
+                                    <p>texto relativo a imagem</p>
+                                </div>
+
+                            </div>                            
+                            <div class="item">
+                                <img src="imgs/imagem2.jfif" alt="alguma coisa">
+
+                                <div class="carousel-caption">
+                                    <h3>Texto descritivo da imagem</h3>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <img src="imgs/imagem3.jfif" alt="alguma coisa">
+                            </div>
+                            <div class="item">
+                                <img src="imgs/imagem4.jfif" alt="alguma coisa">
+                            </div>
+                            <div class="item">
+                                <img src="imgs/imagem5.jfif" alt="alguma coisa">
+                            </div>
+
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel01"  role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+
+                        <a class="right carousel-control" href="#carousel01" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
